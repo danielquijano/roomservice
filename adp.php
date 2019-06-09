@@ -1,4 +1,5 @@
-﻿<?php require_once 'shared/config-global.php' ?>
+﻿<!-- aviso de privacidad -->
+<?php require_once 'shared/config-global.php' ?>
 
 <!doctype html>
 <html lang="en">

@@ -1,4 +1,6 @@
-﻿<?php require_once 'shared/config-global.php' ?>
+﻿<!-- preguntas frecuentes -->
+
+<?php require_once 'shared/config-global.php' ?>
 
 <!doctype html>
 <html lang="en">

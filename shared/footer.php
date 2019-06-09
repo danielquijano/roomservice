@@ -5,7 +5,7 @@
 				<h4>Mapa del Sitio</h4>
 				<ul>
 					<li>
-						<a href="#">Escorts</a>
+						<a href="#">Chicas</a>
 					</li>
 
 					<li>
@@ -17,15 +17,11 @@
 					</li>
 
 					<li>
-						<a href="#">Reservar</a>
-					</li>
-
-					<li>
 						<a href="#">Preguntas</a>
 					</li>
 
 					<li>
-						<a href="#">Contacto</a>
+						<a href="#">Agendar</a>
 					</li>
 
 					<li>
@@ -68,12 +64,6 @@
 					</li>
 					<li>
 						<a href="#">Snapchat</a>
-					</li>
-					<li>
-						<a href="#">18 U.S.C. 2257</a>
-					</li>
-					<li>
-						<a href="#"></a>
 					</li>
 				</ul>
 			</div>

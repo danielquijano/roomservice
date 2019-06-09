@@ -9,7 +9,7 @@
 			<div class="collapse navbar-collapse justify-content-md-center" id="navbar">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
-						<a class="nav-link" href="#">Escorts</a>
+						<a class="nav-link" href="#">Chicas</a>
 					</li>
 
 					<li class="nav-item">
@@ -21,11 +21,11 @@
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link" href="#">Contacto</a>
+						<a class="nav-link" href="#">Preguntas</a>
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link" href="#">Preguntas</a>
+						<a class="nav-link" href="#">Agendar</a>
 					</li>
 
 					<li class="nav-item">
