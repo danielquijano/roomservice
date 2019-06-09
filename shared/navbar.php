@@ -13,38 +13,32 @@
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link" href="#">Services</a>
+						<a class="nav-link" href="#">Servicios</a>
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link" href="#">Rates</a>
+						<a class="nav-link" href="#">Tarifas</a>
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link" href="#">Booking</a>
+						<a class="nav-link" href="#">Contacto</a>
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link" href="#">Contact US</a>
-					</li>
-
-					<li class="nav-item">
-						<a class="nav-link" href="#">FAQs</a>
-					</li>
-
-<!-- 
-					<li class="nav-item">
-						<a class="nav-link" href="#">Motels Directory</a>
-					</li>
-
-					<li class="nav-item">
-						<a class="nav-link" href="#">Se Buscan Chicas</a>
+						<a class="nav-link" href="#">Preguntas</a>
 					</li>
 
 					<li class="nav-item">
 						<a class="nav-link" href="#">Blog</a>
 					</li>
--->
+
+					<li class="nav-item">
+						<a class="nav-link" href="#">Directorio</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#">Se Buscan Chicas</a>
+					</li>
 				</ul>
 			</div>
 		</nav>

@@ -14,10 +14,10 @@
 
 		<div class="slider">
 			<div class="owl-carousel owl-theme">
-				<div class="item"><h4>1</h4></div>
-				<div class="item"><h4>2</h4></div>
-				<div class="item"><h4>3</h4></div>
-				<div class="item"><h4>4</h4></div>
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
 			</div>
 		</div>
 
@@ -26,7 +26,7 @@
 				<div class="row">
 					<div class="col-12">
 						<h1 class="text-center">Lorem ipsum dolor sit amet.</h1>
-						<p class="text-center">estibulum felis libero, porta in lectus ac, ultrices cursus massa. Nullam gravida neque ac sodales molestie. Etiam pharetra ipsum ac ultrices feugiat. Ut pulvinar laoreet magna, vel pulvinar neque bibendum bibendum. Aliquam vel efficitur quam, nec convallis massa. Etiam sit amet nulla tristique ante aliquet rutrum quis sed orci. Vestibulum lectus ipsum, tincidunt a aliquet non. Fendrerit felis, a mi lorem. Sed est lectus, tempor vitae vestibulum non, dapibus quis est.</p>
+						<p class="text-center mb-0">estibulum felis libero, porta in lectus ac, ultrices cursus massa. Nullam gravida neque ac sodales molestie. Etiam pharetra ipsum ac ultrices feugiat. Ut pulvinar laoreet magna, vel pulvinar neque bibendum bibendum. Aliquam vel efficitur quam, nec convallis massa. Etiam sit amet nulla tristique ante aliquet rutrum quis sed orci. Vestibulum lectus ipsum, tincidunt a aliquet non. Fendrerit felis, a mi lorem. Sed est lectus, tempor vitae vestibulum non, dapibus quis est.</p>
 					</div>
 				</div>
 			</div>
@@ -36,17 +36,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="escorts py-5">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<p>All Escorts</p>
-						<p>Lorem ipsum</p>
+						<h2 class="text-center h1">Integer porttitor blandit congue odio.</h2>
+						<p class="text-center mb-5">Sed sit amet turpis eu lorem cursus imperdiet id non est. Donec pharetra aliquet neque, molestie semper nisi lacinia ut. Duis tincidunt, tellus id tempus eleifend, est quam sollicitudin tellus, non volutpat metus tellus in diam. Nam mi mauris, lobortis vitae tellus non, lobortis aliquam ligula.  Proin elementum turpis ut lectus vehicula, eget eleifend lorem sodales. Vivamus non sollicitudin leo, sit amet rhoncus urna. Sed consectetur vehicula ultricies.</p>
 					</div>
 				</div>
 				<div class="row">
@@ -116,31 +107,82 @@
 					</div>
 				</div>
 			</div>
-
-
 		</div>
 
-		<div class="experiences py-5">
+		<div class="benefits py-5">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<p>Trios</p>
-						<p>Teen Sex</p>
-						<p>Amateur Sex</p>
-						<p>Fantasis</p>
+						<h3 class="text-center h1">Aenean scelerisque congue tristique.</h3>
+						<p class="text-center mb-5">Curabitur scelerisque eros vel consectetur dictum. In hac habitasse platea dictumst. Praesent et magna lectus. Nulla et metus iaculis, iaculis diam in, mollis mi. Nam at convallis lectus, at molestie nibh. Nulla id pulvinar massa. Aenean id tortor sit amet arcu auctor facilisis quis maximus ipsum. Proin a vestibulum mi. Phasellus elit orci, sollicitudin eget aliquet et, venenatis molestie felis. In eu dapibus nisl. Nulla varius nibh eget ligula molestie tincidunt.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<ul>
+							<li>Perfiles 100% Reales</li>
+							<li>Sólo escorts mayores de edad</li>
+							<li>Fotos Reales</li>
+						</ul>
+					</div>
+					<div class="col-6">
+						<ul>
+							<li>Discreción Total</li>
+							<li>Seguridad Absoluta</li>
+							<li></li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="benefits">
+		<div class="services py-5">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<p>No Fake Profiles</p>
-						<p>Strict 18+ Only Girls</p>
-						<p>Real Photos</p>
-						<p>Discreet</p>
+						<h4 class="text-center h1">Vivamus a eros nec magna interdum tristique vel quis mauris fermentum efficitur iaculis. </h4>
+						<p class="text-center">Sed erat neque, egestas vitae blandit porttitor, malesuada a dolor. Sed vulputate dui ipsum, ut convallis libero dapibus aliquet. Phasellus semper odio lacinia hendrerit viverra. Maecenas faucibus, lorem quis malesuada fermentum, nulla diam consectetur nisi. quis pretium eros dui eu sapien. Proin vulputate dictum tellus in fringilla. Praesent eu velit quam. In hac habitasse platea dictumst. Suspendisse vel pretium  ac molestie lectus eros.</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-6">
+						<ul>
+							<li>Trios</li>
+							<li>Teen Sex</li>
+							<li>Amateur Sex</li>
+							<li>Fantasis</li>
+						</ul>
+					</div>
+
+					<div class="col-6">
+						<ul>
+							<li>Trios</li>
+							<li>Teen Sex</li>
+							<li>Amateur Sex</li>
+							<li>Fantasis</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="rates py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h4 class="text-center h1">ger eu feugiat lectus. Proin a vestibulum mi. Phasellus elit orci, sollicitudin eget aliquet.</h4>
+						<p class="text-center mb-5">Donec semper lectus faucibus, commodo orci eu, feugiat quam. Maecenas dignissim feugiat erat, commodo condimentum mauris bibendum quis. Ut et turpis mattis, mattis elit sed, facilisis risus.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
 					</div>
 				</div>
 			</div>
