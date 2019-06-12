@@ -7,14 +7,25 @@
 	</head>
 
 	<body class="<?php echo $body_class ?>">
-		<?php require_once 'shared/navbar.php'; ?>
+		<?php 
+			// warning modal
+			require_once 'shared/warning-modal.php';
 
-		<div class="slider">
-			<div class="owl-carousel owl-theme">
-				<div class="item">1</div>
-				<div class="item">2</div>
-				<div class="item">3</div>
-				<div class="item">4</div>
+			// cookie alert
+			require_once 'shared/cookie-alert.php';
+
+			// navbar
+			require_once 'shared/navbar.php';
+		?>
+
+		<!-- carrousel section -->
+		<div class="carousel">
+			<div class="owl-carousel">
+				<?php
+					foreach($carousel_imgs_arr as $index => $imgs_arr){
+						echo '<div class="item"><img src="' . $imgs_arr . '" class="card-img rounded-0" alt="' . $carousel_alts_arr[$index] . '"></div>';
+					}
+				?>
 			</div>
 		</div>
 
@@ -37,62 +48,76 @@
 						<p class="text-center mb-5">Sed sit amet turpis eu lorem cursus imperdiet id non est. Donec pharetra aliquet neque, molestie semper nisi lacinia ut. Duis tincidunt, tellus id tempus eleifend, est quam sollicitudin tellus, non volutpat metus tellus in diam. Nam mi mauris, lobortis vitae tellus non, lobortis aliquam ligula.  Proin elementum turpis ut lectus vehicula, eget eleifend lorem sodales. Vivamus non sollicitudin leo, sit amet rhoncus urna. Sed consectetur vehicula ultricies.</p>
 					</div>
 				</div>
+
 				<div class="row">
 					<div class="col-12">
 						<div class="card-columns">
-							<div class="card bg-primary text-white text-center">
-								<div class="card-body">
-									<h5 class="card-title">Card title that wraps to a new line</h5>
-									<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-								</div>
-							</div>
+							<a href="#">
+								<div class="card">
+									<img class="card-img" src="assets/images/featured-escorts/1.jpg" alt="Card image">
 
-							<div class="card bg-primary text-white text-center">
-								<div class="card-body">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+									<div class="card-img-overlay">
+										<h5 class="card-title text-white">Card title</h5>
+										<p class="card-text text-white">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+									</div>
 								</div>
-							</div>
-		
-							<div class="card bg-primary text-white text-center">
-								<div class="card-body">
-									<h5 class="card-title">Card title</h5>
-									<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-								</div>
-							</div>
+							</a>
 
-							<div class="card bg-primary text-white text-center">
-								<div class="card-body">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-								</div>
-							</div>
+							<a href="#">
+								<div class="card">
+									<img class="card-img" src="assets/images/featured-escorts/2.jpg" alt="Card image">
 
-							<div class="card bg-primary text-white text-center">
-								<div class="card-body">
-									<h5 class="card-title">Card title</h5>
-									<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+									<div class="card-img-overlay">
+										<h5 class="card-title text-white">Card title</h5>
+										<p class="card-text text-white">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+									</div>
 								</div>
-							</div>
+							</a>
 
-							<div class="card bg-primary text-white text-center">
-								<div class="card-body">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-								</div>
-							</div>
+							<a href="#">
+								<div class="card">
+									<img class="card-img" src="assets/images/featured-escorts/3.jpg" alt="Card image">
 
-							<div class="card bg-primary text-white text-center">
-								<div class="card-body">
-									<h5 class="card-title">Card title</h5>
-									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+									<div class="card-img-overlay">
+										<h5 class="card-title text-white">Card title</h5>
+										<p class="card-text text-white">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+									</div>
 								</div>
-							</div>
+							</a>
 
-							<div class="card bg-primary text-white text-center">
-								<div class="card-body">
-									<h5 class="card-title">Card title</h5>
-									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+							<a href="#">
+								<div class="card">
+									<img class="card-img" src="assets/images/featured-escorts/4.jpg" alt="Card image">
+
+									<div class="card-img-overlay">
+										<h5 class="card-title text-white">Card title</h5>
+										<p class="card-text text-white">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+									</div>
 								</div>
-							</div>
+							</a>
+
+							<a href="#">
+								<div class="card">
+									<img class="card-img" src="assets/images/featured-escorts/5.jpg" alt="Card image">
+
+									<div class="card-img-overlay">
+										<h5 class="card-title text-white">Card title</h5>
+										<p class="card-text text-white">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+									</div>
+								</div>
+							</a>
+
+							<a href="#">
+								<div class="card">
+									<img class="card-img" src="assets/images/featured-escorts/6.jpg" alt="Card image">
+
+									<div class="card-img-overlay">
+										<h5 class="card-title text-white">Card title</h5>
+										<p class="card-text text-white">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+									</div>
+								</div>
+							</a>
+
 						</div>
 					</div>
 				</div>
@@ -100,11 +125,13 @@
 		</div>
 
 		<div class="all-scorts">
-			<div class="row">
-				<div class="col-12">
-					<p class="text-center mb-0">
-						<button class="btn btn-primary btn-lg text-uppercase">Ver a todas nuestras hermosas chicas</button>
-					</p>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<p class="text-center mb-0">
+							<button class="btn btn-primary btn-lg shadow text-capitalize">Ver todas las chicas</button>
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -231,6 +258,14 @@
 			</div>
 		</div>
 
+		<div class="offert">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">promo de la semana</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="schedule py-5">
 			<div class="container">
 				<div class="row">
@@ -246,37 +281,63 @@
 						<form>
 							<div class="form-row">
 								<div class="form-group col-md-6">
-								<label for="inputEmail4">Email</label>
-								<input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+									<label for="inputName">Nombre</label>
+									<input type="email" class="form-control" id="inputName" placeholder="Nombre o Nickname">
 								</div>
+
 								<div class="form-group col-md-6">
-								<label for="inputPassword4">Password</label>
-								<input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+									<label for="inputWhatsapp">Whatsapp</label>
+									<input type="password" class="form-control" id="inputWhatsapp" placeholder="Whatsapp">
 								</div>
 							</div>
-							<div class="form-group">
-								<label for="inputAddress">Address</label>
-								<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-							</div>
-							<div class="form-group">
-								<label for="inputAddress2">Address 2</label>
-								<input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-							</div>
+
 							<div class="form-row">
 								<div class="form-group col-md-6">
-								<label for="inputCity">City</label>
-								<input type="text" class="form-control" id="inputCity">
+									<label for="inputEscort">Selecciona a tu(s) chica(s)</label>
+									<input type="text" class="form-control" id="inputEscort" placeholder="1234 Main St">
+								</div>
+
+								<div class="form-group col-md-6">
+									<label for="inputMotel">Selecciona el Motel</label>
+									<select id="inputMotel" class="form-control">
+										<option selected>Selecciona un Motel</option>
+										<option value="">Aqua Palau</option>
+										<option value="">Begoña</option>
+										<option value="">Casa Blanca Suites (Bernardo Reyes)</option>
+										<option value="">Casa Blanca Suites (Guadalupe)</option>
+										<option value="">Cascada</option>
+										<option value="">Dali (Churubusco)</option>
+										<option value="">Dali (Carretera Nacional)</option>
+										<option value="">Hacienda (Cumbres)</option>
+										<option value="">Hacienda (Monterrey Centro)</option>
+										<option value="">Hotel Atenas</option>
+										<option value="">Hotel Paris</option>
+										<option value="">Kyoto Suites Motel</option>
+										<option value="">Marbella (Guadalupe)</option>
+										<option value="">Marbella (Santa Catarina)</option>
+										<option value="">NIU Bed & Senz</option>
+										<option value="">Seara</option>
+										<option value="">Tio Pepe</option>
+										<option value="">Otro</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label for="inputDate">Selecciona la Fecha</label>
+									<input type="text" class="form-control" id="inputDate">
 								</div>
 								<div class="form-group col-md-4">
-								<label for="inputState">State</label>
-								<select id="inputState" class="form-control">
-									<option selected>Choose...</option>
-									<option>...</option>
-								</select>
+									<label for="inputHour">Selecciona la Hora</label>
+									<select id="inputHour" class="form-control">
+										<option selected>Choose...</option>
+										<option>...</option>
+									</select>
 								</div>
 								<div class="form-group col-md-2">
-								<label for="inputZip">Zip</label>
-								<input type="text" class="form-control" id="inputZip">
+								<label for="inputRate">Tarifa</label>
+								<input type="text" class="form-control" id="inputRate">
 								</div>
 							</div>
 							<div class="form-group">
