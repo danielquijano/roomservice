@@ -1,0 +1,27 @@
+﻿.nht-features {
+	.row {
+		> div[class*="col"] {
+			.border {
+				background-color: $white;
+
+				@include transition(all 0.25s ease);
+
+				p,
+				.material-icons { 
+					color: $primary
+				}
+
+				&:hover {
+					border: 1px solid $secondary !important;
+					background-color: $secondary;
+					cursor: default;
+
+					p,
+					.material-icons {
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+}

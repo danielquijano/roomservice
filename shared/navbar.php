@@ -1,46 +1,22 @@
-<div class="main-navbar bg-dark">
-	<div class="container">
-		<nav class="navbar navbar-expand-md navbar-dark">
-			<a class="navbar-brand d-block d-sm-none" href="#">Room Service</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-			</button>
+<!-- main menu -->
+<nav class="navbar navbar-dark bg-primary navbar-expand-md pt-1 pb-0">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+		<span class="navbar-toggler-icon"></span>
+	</button>
 
-			<div class="collapse navbar-collapse justify-content-md-center" id="navbar">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="#">Chicas</a>
-					</li>
-
-					<li class="nav-item">
-						<a class="nav-link" href="#">Servicios</a>
-					</li>
-
-					<li class="nav-item">
-						<a class="nav-link" href="#">Tarifas</a>
-					</li>
-
-					<li class="nav-item">
-						<a class="nav-link" href="#">Preguntas</a>
-					</li>
-
-					<li class="nav-item">
-						<a class="nav-link" href="#">Agendar</a>
-					</li>
-
-					<li class="nav-item">
-						<a class="nav-link" href="#">Blog</a>
-					</li>
-
-					<li class="nav-item">
-						<a class="nav-link" href="#">Directorio</a>
-					</li>
-
-					<li class="nav-item">
-						<a class="nav-link" href="#">Se Buscan Chicas</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
+	<div class="collapse navbar-collapse" id="navbar">
+		<ul class="navbar-nav text-center nav-justified w-100">
+			<?php
+				foreach ($navbar_attrs as $key => $value) {
+					echo '
+						<li class="nav-item">
+							<a class="nav-link h2 text-patua-one" href="' . $value['url'] . '">
+								<i class="mdi ' . $value['icon'] . ' md-36 align-text-top">' . '</i> ' . $value['name'] . '
+							</a>
+						</li>
+					';
+				}
+			?>
+		</ul>
 	</div>
-</div>
+</nav>

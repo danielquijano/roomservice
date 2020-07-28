@@ -1,5 +1,5 @@
 <!-- warning modal -->
-<div class="modal jquery-warning-modal animated flipInY">
+<div class="modal fade js-warning-modal">
 	<div class="modal-dialog modal-dialog-centered">
 		<div class="modal-content bg-transparent border-0 rounded-0">
 			<div class="modal-body">
@@ -13,7 +13,7 @@
 					<div class="row">
 						<div class="col-6">
 							<p class="text-center mb-0">
-								<a class="btn btn-outline-light btn-block rounded-0 py-2" href="https://www.disney.com/">No, I'm</a>
+								<a class="btn btn-outline-light btn-block rounded-0 py-2" href="http://blank.org/">No, I'm</a>
 							</p>
 						</div>
 						<div class="col-6">

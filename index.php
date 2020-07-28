@@ -1,389 +1,170 @@
-﻿<?php require_once 'shared/config-global.php' ?>
+﻿<?php require_once 'shared/config.php' ?>
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<?php require_once 'shared/head.php'; ?>
-	</head>
 
-	<body class="<?php echo $body_class ?>">
-		<?php 
-			// warning modal
-			require_once 'shared/warning-modal.php';
+<head>
+	<?php require_once 'shared/head.php'; ?>
+</head>
 
-			// cookie alert
-			require_once 'shared/cookie-alert.php';
+<body class="<?php echo $body_class ?>">
+	<?php
+	// warning modal
+	require_once 'shared/warning-modal.php';
 
-			// navbar
-			require_once 'shared/navbar.php';
-		?>
+	// cookie alert
+	require_once 'shared/cookie-alert.php';
 
-		<!-- carrousel section -->
-		<div class="carousel">
-			<div class="owl-carousel">
+	// navbar
+	require_once 'shared/navbar.php';
+	?>
+
+	<!-- carousel section -->
+	<div id="carousel" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carousel" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel" data-slide-to="1"></li>
+			<li data-target="#carousel" data-slide-to="2"></li>
+			<li data-target="#carousel" data-slide-to="3"></li>
+			<li data-target="#carousel" data-slide-to="5"></li>
+			<li data-target="#carousel" data-slide-to="6"></li>
+			<li data-target="#carousel" data-slide-to="7"></li>
+		</ol>
+
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img class="d-block w-100" src="assets/images/1.jpg" alt="">
+				<div class="carousel-caption d-none d-md-block">
+					<h5>...</h5>
+					<p>...</p>
+				</div>
+			</div>
+			<?php
+				foreach ($carousel_imgs_arr as $index => $imgs_arr) {
+					echo 
+					'<div class="carousel-item">
+						<img src="' . $imgs_arr . '" class="d-block w-100" alt="' . $carousel_alts_arr[$index] . '">
+						<div class="carousel-caption d-none d-md-block">
+							<h5>...</h5>
+							<p>...</p>
+						</div>
+					</div>';
+				}
+			?>
+		</div>
+
+		<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+	
+	<!-- headline section -->
+	<div class="nht-headline bg-primary py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-1"></div>
+				<div class="col-lg-10">
+					<h1 class="text-warning text-md-center text-patua-one mb-0">Hot Sexy Girls Photos & Videos</h1>
+					<p class="text-white text-justify text-md-center mt-4 mb-0 lead">Spend hours of pure pleasure watching hot sexy girls masturbating to orgasm, cumming over, dancing sensually, stripping slowly in front of the camera, and getting fucked hard for just a few dollars like cheap street prostitutes. Man, you won't find these anywhere else on the entire internet.</p>
+				</div>
+				<div class="col-lg-1"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- invited models section -->
+	<div class="nht-invited-models py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-1"></div>
+				<div class="col-lg-10">
+					<h2 class="text-primary text-md-center text-patua-one mb-0 h1">Ordinary Real Babes Doing Porn</h2>
+					<p class="text-justify text-md-center mt-4 mb-5 lead">Each one of them completely exclusive, adorable, cute, totally innocent, with a perfect body, and a dirty mind, between 18 - 23 years old, willing to do everything to satisfy your dark sexual fantasies, experiencing their first encounter in the pornography industry, and looking to become the hottest pornstars.</p>
+				</div>
+				<div class="col-lg-1"></div>
+			</div>
+			<div class="row nht-gutters">
 				<?php
-					foreach($carousel_imgs_arr as $index => $imgs_arr){
-						echo '<div class="item"><img src="' . $imgs_arr . '" class="card-img rounded-0" alt="' . $carousel_alts_arr[$index] . '"></div>';
+					foreach ($invited_models_attrs as $value) {
+					echo
+						'<div class="' . $value['col'] . '">
+							<a href="' . $value['url'] . '">
+								<picture>
+									<source class="lazy" media="(max-width: 767px)" srcset="' . $value['img-sm'] . '">
+									<img class="img-fluid lazy" alt="' . $value['alt'] . '" title="" src="' . $value['img-lg'] . '">
+								</picture>
+							</a>
+						</div>';
 					}
 				?>
 			</div>
 		</div>
+	</div>
 
-		<div class="headline py-5">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<h1 class="text-center">Room Service.</h1>
-						<p class="text-center mb-0">estibulum felis libero, porta in lectus ac, ultrices cursus massa. Nullam gravida neque ac sodales molestie. Etiam pharetra ipsum ac ultrices feugiat. Ut pulvinar laoreet magna, vel pulvinar neque bibendum bibendum. Aliquam vel efficitur quam, nec convallis massa. Etiam sit amet nulla tristique ante aliquet rutrum quis sed orci. Vestibulum lectus ipsum, tincidunt a aliquet non. Fendrerit felis, a mi lorem. Sed est lectus, tempor vitae vestibulum non, dapibus quis est.</p>
-					</div>
+	<!-- hottest sets section -->
+	<div class="nht-hottest-sets py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-1"></div>
+				<div class="col-lg-10">
+					<h3 class="text-primary text-md-center text-patua-one mb-0 h1">A New Bunch of Horny Women</h3>
+					<p class="text-justify text-md-center mt-4 mb-5 lead">Watch stunning ex-girlfriends naked showing off their nice tits, desperate housewives cheating on their husbands as soon as they leave, exploited teens spreading their legs wide open, rubbing their delicious shaved pink pussy, having fun sucking dicks and craving to get a lot of cum in their mouths.</p>
 				</div>
+				<div class="col-lg-1"></div>
 			</div>
-		</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="card-columns">
 
-		<div class="featured-escorts py-5">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<h2 class="text-center h1">Nuevas Escorts</h2>
-						<p class="text-center mb-5">Sed sit amet turpis eu lorem cursus imperdiet id non est. Donec pharetra aliquet neque, molestie semper nisi lacinia ut. Duis tincidunt, tellus id tempus eleifend, est quam sollicitudin tellus, non volutpat metus tellus in diam. Nam mi mauris, lobortis vitae tellus non, lobortis aliquam ligula.  Proin elementum turpis ut lectus vehicula, eget eleifend lorem sodales. Vivamus non sollicitudin leo, sit amet rhoncus urna. Sed consectetur vehicula ultricies.</p>
-					</div>
-				</div>
+						<?php
+						foreach ($hottest_sets_attrs as $value) {
+							echo
+								'<a href="' . $value['url'] . '">
+									<div class="card mb-1">
+										<img class="card-img" src="' . $value['image'] . '" alt="' . $value['alt'] . '" title="">
 
-				<div class="row">
-					<div class="col-12">
-						<div class="card-columns">
-							<a href="#">
-								<div class="card">
-									<img class="card-img" src="assets/images/featured-escorts/1.jpg" alt="Card image">
-
-									<div class="card-img-overlay">
-										<h5 class="card-title text-white">Card title</h5>
-										<p class="card-text text-white">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+										<div class="card-img-overlay p-0">
+											<p class="card-title text-warning text-uppercase font-weight-bold mt-2 mb-0 px-3">' . $value['title'] . '</p>
+											<p class="card-title text-warning mb-0 px-3">' . $value['grades'] . '</p>
+											<p class="card-text text-white mb-0 pt-4 pb-3 px-3">' . $value['text'] . '</p>
+										</div>
 									</div>
-								</div>
-							</a>
-
-							<a href="#">
-								<div class="card">
-									<img class="card-img" src="assets/images/featured-escorts/2.jpg" alt="Card image">
-
-									<div class="card-img-overlay">
-										<h5 class="card-title text-white">Card title</h5>
-										<p class="card-text text-white">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-									</div>
-								</div>
-							</a>
-
-							<a href="#">
-								<div class="card">
-									<img class="card-img" src="assets/images/featured-escorts/3.jpg" alt="Card image">
-
-									<div class="card-img-overlay">
-										<h5 class="card-title text-white">Card title</h5>
-										<p class="card-text text-white">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-									</div>
-								</div>
-							</a>
-
-							<a href="#">
-								<div class="card">
-									<img class="card-img" src="assets/images/featured-escorts/4.jpg" alt="Card image">
-
-									<div class="card-img-overlay">
-										<h5 class="card-title text-white">Card title</h5>
-										<p class="card-text text-white">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-									</div>
-								</div>
-							</a>
-
-							<a href="#">
-								<div class="card">
-									<img class="card-img" src="assets/images/featured-escorts/5.jpg" alt="Card image">
-
-									<div class="card-img-overlay">
-										<h5 class="card-title text-white">Card title</h5>
-										<p class="card-text text-white">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-									</div>
-								</div>
-							</a>
-
-							<a href="#">
-								<div class="card">
-									<img class="card-img" src="assets/images/featured-escorts/6.jpg" alt="Card image">
-
-									<div class="card-img-overlay">
-										<h5 class="card-title text-white">Card title</h5>
-										<p class="card-text text-white">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-									</div>
-								</div>
-							</a>
-
-						</div>
+								</a>';
+						}
+						?>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<div class="all-scorts">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<p class="text-center mb-0">
-							<button class="btn btn-primary btn-lg shadow text-capitalize">Ver todas las chicas</button>
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
+	<?php
+	// updates section
+	require_once 'shared/updates.php';
 
-		<div class="benefits py-5">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<h3 class="text-center h1">Garantias Para Nuestros Clientes</h3>
-						<p class="text-center mb-5">Curabitur scelerisque eros vel consectetur dictum. In hac habitasse platea dictumst. Praesent et magna lectus. Nulla et metus iaculis, iaculis diam in, mollis mi. Nam at convallis lectus, at molestie nibh. Nulla id pulvinar massa. Aenean id tortor sit amet arcu auctor facilisis quis maximus ipsum. Proin a vestibulum mi. Phasellus elit orci, sollicitudin eget aliquet et, venenatis molestie felis. In eu dapibus nisl. Nulla varius nibh eget ligula molestie tincidunt.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-6">
-					</div>
-					<div class="col-6">
-						<ul>
-							<li>Discreción Total</li>
-							<li>Seguridad Absoluta</li>
-							<li>Perfiles 100% Reales</li>
-							<li>Sólo escorts mayores de edad</li>
-							<li>Fotos Reales</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
+	// features section
+	require_once 'shared/features.php';
 
-		<div class="services py-5">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<h4 class="text-center h1">Servicios Escorts Que Ofrecemos</h4>
-						<p class="text-center">Sed erat neque, egestas vitae blandit porttitor, malesuada a dolor. Sed vulputate dui ipsum, ut convallis libero dapibus aliquet. Phasellus semper odio lacinia hendrerit viverra. Maecenas faucibus, lorem quis malesuada fermentum, nulla diam consectetur nisi. quis pretium eros dui eu sapien. Proin vulputate dictum tellus in fringilla. Praesent eu velit quam. In hac habitasse platea dictumst. Suspendisse vel pretium  ac molestie lectus eros.</p>
-					</div>
-				</div>
+	// call 2 action section
+	require_once 'shared/call2action.php';
 
-				<div class="row">
-					<div class="col-4">
-						<ul>
-							<li>Trios</li>
-							<li>Teen Sex</li>
-							<li>Amateur Sex</li>
-							<li>Fantasis</li>
-						</ul>
-					</div>
+	// newsletter section
+	require_once 'shared/newsletter.php';
 
-					<div class="col-4">
-						<ul>
-							<li>Trios</li>
-							<li>Teen Sex</li>
-							<li>Amateur Sex</li>
-							<li>Fantasis</li>
-						</ul>
-					</div>
+	// footer section
+	require_once 'shared/footer.php';
 
-					<div class="col-4">
-						<ul>
-							<li>Trios</li>
-							<li>Teen Sex</li>
-							<li>Amateur Sex</li>
-							<li>Fantasis</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
+	// copyright section
+	require_once 'shared/copyright.php';
 
-		<div class="rates py-5">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<h4 class="text-center h1">Tarifas</h4>
-						<p class="text-center mb-5">Donec semper lectus faucibus, commodo orci eu, feugiat quam. Maecenas dignissim feugiat erat, commodo condimentum mauris bibendum quis. Ut et turpis mattis, mattis elit sed, facilisis risus.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-6">
-						<ul>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-						</ul>
-					</div>
-					<div class="col-6">
-						<ul>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
+	// javascript libraries
+	require_once 'shared/libraries.php';
+	?>
+</body>
 
-		<div class="faqs py-5">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<h4 class="text-center h1">Preguntas Frecuentes</h4>
-						<p class="text-center mb-5">Donec semper lectus faucibus, commodo orci eu, feugiat quam. Maecenas dignissim feugiat erat, commodo condimentum mauris bibendum quis. Ut et turpis mattis, mattis elit sed, facilisis risus.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-6">
-						<ul>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-						</ul>
-					</div>
-					<div class="col-6">
-						<ul>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="offert">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">promo de la semana</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="schedule py-5">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<h5 class="text-center">
-							Agenda Una Escort En tu Hotel Favorito
-						</h5>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-12">
-						<form>
-							<div class="form-row">
-								<div class="form-group col-md-6">
-									<label for="inputName">Nombre</label>
-									<input type="email" class="form-control" id="inputName" placeholder="Nombre o Nickname">
-								</div>
-
-								<div class="form-group col-md-6">
-									<label for="inputWhatsapp">Whatsapp</label>
-									<input type="password" class="form-control" id="inputWhatsapp" placeholder="Whatsapp">
-								</div>
-							</div>
-
-							<div class="form-row">
-								<div class="form-group col-md-6">
-									<label for="inputEscort">Selecciona a tu(s) chica(s)</label>
-									<input type="text" class="form-control" id="inputEscort" placeholder="1234 Main St">
-								</div>
-
-								<div class="form-group col-md-6">
-									<label for="inputMotel">Selecciona el Motel</label>
-									<select id="inputMotel" class="form-control">
-										<option selected>Selecciona un Motel</option>
-										<option value="">Aqua Palau</option>
-										<option value="">Begoña</option>
-										<option value="">Casa Blanca Suites (Bernardo Reyes)</option>
-										<option value="">Casa Blanca Suites (Guadalupe)</option>
-										<option value="">Cascada</option>
-										<option value="">Dali (Churubusco)</option>
-										<option value="">Dali (Carretera Nacional)</option>
-										<option value="">Hacienda (Cumbres)</option>
-										<option value="">Hacienda (Monterrey Centro)</option>
-										<option value="">Hotel Atenas</option>
-										<option value="">Hotel Paris</option>
-										<option value="">Kyoto Suites Motel</option>
-										<option value="">Marbella (Guadalupe)</option>
-										<option value="">Marbella (Santa Catarina)</option>
-										<option value="">NIU Bed & Senz</option>
-										<option value="">Seara</option>
-										<option value="">Tio Pepe</option>
-										<option value="">Otro</option>
-									</select>
-								</div>
-							</div>
-
-							<div class="form-row">
-								<div class="form-group col-md-6">
-									<label for="inputDate">Selecciona la Fecha</label>
-									<input type="text" class="form-control" id="inputDate">
-								</div>
-								<div class="form-group col-md-4">
-									<label for="inputHour">Selecciona la Hora</label>
-									<select id="inputHour" class="form-control">
-										<option selected>Choose...</option>
-										<option>...</option>
-									</select>
-								</div>
-								<div class="form-group col-md-2">
-								<label for="inputRate">Tarifa</label>
-								<input type="text" class="form-control" id="inputRate">
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="gridCheck">
-								<label class="form-check-label" for="gridCheck">
-									Check me out
-								</label>
-								</div>
-							</div>
-							<button type="submit" class="btn btn-primary">Sign in</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="be-an-escort">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 text-center">
-						Quieres ser una Chica Escort?
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="instagram">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 text-center">
-						instagram
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<?php
-			// footer section
-			require_once 'shared/footer.php';
-
-			// copyright section
-			require_once 'shared/copyright.php';
-
-			// javascript libraries
-			require_once 'shared/libraries.php';
-		?>
-	</body>
 </html>

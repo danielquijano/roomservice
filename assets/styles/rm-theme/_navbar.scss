@@ -1,0 +1,11 @@
+﻿.navbar-container {
+	background-color: map-get($purples, "600");
+}
+
+.navbar-dark {
+	.navbar-nav {
+		.nav-link {
+			@include transition(all 0.25s ease);
+		}
+	}
+}

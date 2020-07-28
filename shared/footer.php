@@ -1,71 +1,36 @@
-<footer class="footer">
+<footer class="nht-footer py-5">
 	<div class="container">
-		<div class="row">
-			<div class="col-4">
-				<h4>Mapa del Sitio</h4>
-				<ul>
-					<li>
-						<a href="#">Chicas</a>
-					</li>
-
-					<li>
-						<a href="#">Servicios</a>
-					</li>
-
-					<li>
-						<a href="#">Tarifas</a>
-					</li>
-
-					<li>
-						<a href="#">Preguntas</a>
-					</li>
-
-					<li>
-						<a href="#">Agendar</a>
-					</li>
-
-					<li>
-						<a href="#">Blog</a>
-					</li>
-
-					<li>
-						<a href="#">Directorio</a>
-					</li>
-
-					<li>
-						<a href="#">Se Buscan Chicas</a>
-					</li>
-				</ul>
+		<div class="row no-gutters">
+			<div class="col-6 col-md-4">
+				<div class="h-100 pl-5">
+					<p class="h2 text-primary text-uppercase text-patua-one mb-3">Site Map</p>
+					<ul class="list-unstyled mb-0">
+						<?php 
+							foreach ($sitemap_attrs as $key => $value) {
+								echo '<li><a class="btn btn-link btn-sm" title="' . $value['title'] . '" href="' . $value['url'] . '">' . $value['name'] . '</a></li>';
+							}
+						?>
+					</ul>
+				</div>
 			</div>
 
-			<div class="col-4">
-				<h4>Legal</h4>
-				<ul>
-					<li>
-						<a href="#">Terminos y Condiciones</a>
-					</li>
-					<li>
-						<a href="#">Aviso de Privacidad</a>
-					</li>
-					<li>
-						<a href="#">Politicas de Reembolso</a>
-					</li>
-					<li>
-						<a href="#">18 U.S.C. 2257</a>
-					</li>
-				</ul>
+			<div class="col-6 col-md-4">
+				<div class="h-100 pl-5">
+					<p class="h2 text-primary text-uppercase text-patua-one mb-3">Agreement</p>
+					<ul class="list-unstyled mb-0">
+						<?php
+							foreach ($agreement_attrs as $key => $value) {
+								echo '<li><a class="btn btn-link btn-sm" title="' . $value['title'] . '" href="' . $value['url'] . '">' . $value['name'] . '</a></li>';
+							}
+						?>
+					</ul>
+				</div>
 			</div>
 
-			<div class="col-4">
-				<h4>Redes Sociales</h4>
-				<ul>
-					<li>
-						<a href="#">Instagram</a>
-					</li>
-					<li>
-						<a href="#">Snapchat</a>
-					</li>
-				</ul>
+			<div class="col-12 col-md-4">
+				<div class="h-100 pl-5">
+					<p class="h2 text-primary text-uppercase text-patua-one mb-3">Support</p>
+				</div>
 			</div>
 		</div>
 	</div>
