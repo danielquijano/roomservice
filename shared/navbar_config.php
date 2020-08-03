@@ -1,19 +1,24 @@
 <?php
-    $navbar_attrs = array(
-        array(
-            'url'   => $url_index,
-            'icon'  => 'mdi-home',
-            'name'  => 'Home',
-        ),
-        array(
-            'url'   => $url_join,
-            'icon'  => 'mdi-heart',
-            'name'  => 'Join Us <span class="d-md-none d-lg-inline">Now</span>',
-        ),
-        array(
-            'url'   => $url_members,
-            'icon'  => 'mdi-face',
-            'name'  => 'Members',
-        ),
-    );
+	$navbar_attrs = array(
+		array(
+			'url'   => $url_index,
+			'name'  => 'Inicio',
+		),
+		array(
+			'url'   => $url_index,
+			'name'  => 'Chicas',
+		),
+		array(
+			'url' => $url_index,
+			'name' => 'Preguntas',
+		),
+		array(
+			'url' => $url_index,
+			'name' => 'Moteles',
+		),
+		array(
+			'url' => $url_index,
+			'name' => 'Se buscan chicas'
+		)
+	);
 ?>
